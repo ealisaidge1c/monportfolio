@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Paysage – elakhyf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">elakhyf</div>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="sport.html">Sport</a>
+        <a href="portrait.html">Portrait</a>
+        <a href="paysage.html">Paysage</a>
+        <a href="animaux-nature.html">Animaux & nature</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Paysage</h2>
+      <p>Paysages urbains et naturels.</p>
+
+      <div class="grid">
+        <div class="card-image">
+          <img src="images/SKI.jpg" alt="SKI" class="js-lightbox-item">
+        </div>
+
+        <div class="card-image">
+          <img src="images/soleil.jpg" alt="soleil" class="js-lightbox-item">
+        </div>
+
+        <div class="card-image">
+          <img src="images/SKI2.jpg" alt="SKI2" class="js-lightbox-item">
+        </div>
+
+        <div class="card-image">
+          <img src="images/SKI3.jpg" alt="SKI3" class="js-lightbox-item">
+        </div>
+
+        <div class="card-image">
+          <img src="images/SKI4.jpg" alt="SKI4" class="js-lightbox-item">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> elakhyf – Portfolio.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox-js" id="lightbox-js">
+    <div class="lightbox-js__overlay"></div>
+    <button class="lightbox-js__close" aria-label="Fermer">&times;</button>
+    <button class="lightbox-js__prev" aria-label="Image précédente">&#10094;</button>
+    <img class="lightbox-js__img" src="" alt="">
+    <button class="lightbox-js__next" aria-label="Image suivante">&#10095;</button>
+  </div>
+
+  <script src="lightbox.js"></script>
+</body>
+</html>

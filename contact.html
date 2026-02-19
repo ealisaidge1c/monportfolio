@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – elakhyf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">elakhyf</div>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="sport.html">Sport</a>
+        <a href="portrait.html">Portrait</a>
+        <a href="paysage.html">Paysage</a>
+        <a href="animaux-nature.html">Animaux & nature</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>instagram : elakhyf</p>
+      <p>e-mail : <a href="mailto:elakhyf.lens@gmail.com">elakhyf.lens@gmail.com</a></p>
+      <p>
+        <a class="btn" href="mailto:elakhyf.lens@gmail.com">M’écrire un email</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Laisser un message</h2>
+      <p>Ce formulaire ouvrira ton logiciel de messagerie avec le message pré‑rempli.</p>
+
+      <form class="contact-form"
+            action="mailto:elakhyf.lens@gmail.com"
+            method="get"
+            enctype="text/plain">
+        <label>
+          Nom / Prénom
+          <input type="text" name="subject" placeholder="Votre nom">
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" placeholder="votre.email@example.com">
+        </label>
+
+        <label>
+          Message
+          <textarea name="body" rows="5" placeholder="Votre message..."></textarea>
+        </label>
+
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> elakhyf – Portfolio.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox présente mais inutilisée sur cette page, ce n’est pas grave -->
+  <div class="lightbox-js" id="lightbox-js">
+    <div class="lightbox-js__overlay"></div>
+    <button class="lightbox-js__close" aria-label="Fermer">&times;</button>
+    <button class="lightbox-js__prev" aria-label="Image précédente">&#10094;</button>
+    <img class="lightbox-js__img" src="" alt="">
+    <button class="lightbox-js__next" aria-label="Image suivante">&#10095;</button>
+  </div>
+
+  <script src="lightbox.js"></script>
+</body>
+</html>

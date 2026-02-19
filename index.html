@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>ALI SAID Elarif Youssouf – Portfolio photo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de photographie : sport, portrait, paysage, animaux & nature.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">ALI SAID Elarif</div>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="sport.html">Sport</a>
+        <a href="portrait.html">Portrait</a>
+        <a href="paysage.html">Paysage</a>
+        <a href="animaux-nature.html">Animaux & nature</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div>
+        <h1>elakhyf</h1>
+        <p class="hero-subtitle">Photographe amateur</p>
+        <p>
+          Portfolio de photographie : sport, portraits, paysages, animaux & nature.
+        </p>
+        <a href="contact.html" class="btn">Me contacter</a>
+      </div>
+      <div class="hero-image">
+        <img class="hero-photo" src="images/moi.jpg" alt="Portrait de elakhyf">
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Catégories</h2>
+      <p>Explore mes différentes séries de photos.</p>
+
+      <div class="grid">
+        <a class="card card-link" href="sport.html">
+          <div class="card-image cat-sport"></div>
+          <div class="card-body">
+            <h3>Sport</h3>
+            <p>Matchs, action, mouvements et énergie.</p>
+          </div>
+        </a>
+
+        <a class="card card-link" href="portrait.html">
+          <div class="card-image cat-portrait"></div>
+          <div class="card-body">
+            <h3>Portrait</h3>
+            <p>Portraits en lumière naturelle ou artificielle.</p>
+          </div>
+        </a>
+
+        <a class="card card-link" href="paysage.html">
+          <div class="card-image cat-paysage"></div>
+          <div class="card-body">
+            <h3>Paysage</h3>
+            <p>Villes, campagnes et voyages.</p>
+          </div>
+        </a>
+
+        <a class="card card-link" href="animaux-nature.html">
+          <div class="card-image cat-animaux"></div>
+          <div class="card-body">
+            <h3>Animaux & nature</h3>
+            <p>Faune, flore, balades en extérieur.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> elakhyf – Portfolio.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox commune (même sur cette page, elle sera vide mais prête) -->
+  <div class="lightbox-js" id="lightbox-js">
+    <div class="lightbox-js__overlay"></div>
+    <button class="lightbox-js__close" aria-label="Fermer">&times;</button>
+    <button class="lightbox-js__prev" aria-label="Image précédente">&#10094;</button>
+    <img class="lightbox-js__img" src="" alt="">
+    <button class="lightbox-js__next" aria-label="Image suivante">&#10095;</button>
+  </div>
+
+  <script src="lightbox.js"></script>
+</body>
+</html>
