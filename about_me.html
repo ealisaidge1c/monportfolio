@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>About me – elakhyf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Wrapper général */
+    .about-wrapper {
+      min-height: calc(100vh - 80px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 64px 16px;
+    }
+
+    .about-card {
+      max-width: 900px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      box-shadow: 0 14px 32px rgba(0,0,0,0.12);
+      padding: 24px 24px 20px;
+    }
+
+    /* Titre de la carte */
+    .about-title {
+      margin: 0 0 16px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--text, #111);
+      text-align: center;
+    }
+
+    /* Mise en page image + texte côte à côte sur desktop */
+    .about-layout {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      align-items: flex-start;
+    }
+
+    /* Colonne image */
+    .about-photo-wrapper {
+      flex: 0 0 35%; /* environ un tiers pour la photo */
+    }
+
+    .about-photo {
+      width: 100%;
+      height: auto;
+      max-height: 380px;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Colonne texte */
+    .about-text {
+      flex: 1;
+      color: var(--muted);
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
+
+    /* Responsive : sur mobile, on repasse en colonne */
+    @media (max-width: 768px) {
+      .about-card {
+        padding: 20px 16px;
+      }
+
+      .about-layout {
+        flex-direction: column;
+      }
+
+      .about-photo-wrapper {
+        flex: 0 0 auto;
+      }
+
+      .about-photo {
+        max-height: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">elakhyf</div>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="sport.html">Sport</a>
+        <a href="portrait.html">Portrait</a>
+        <a href="paysage.html">Paysage</a>
+        <a href="animaux-nature.html">Animaux & nature</a>
+        <a href="about_me.html">About me</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="about-wrapper">
+    <div class="about-card">
+      <!-- Titre modifiable -->
+      <h2 class="about-title">About me</h2>
+
+      <div class="about-layout">
+        <!-- Colonne image -->
+        <div class="about-photo-wrapper">
+          <img src="images/moiv3.jpg"
+               alt="Portrait de elakhyf"
+               class="about-photo">
+        </div>
+
+        <!-- Colonne texte -->
+        <p class="about-text">
+          Je m'appelle Elarif Youssouf Amine ALI SAID, étudiant passionné qui aime capturer le monde et partager sa vision des choses et du monde à travers son objectif 📸.
+          <br><br>
+          Je suis d’origine comorienne 🇰🇲, né à Bourg-la-Reine (92) et basé en région parisienne.
+          Je toujours partant pour échanger, collaborer ou lancer de nouveaux projets, je vous invite à découvrir mes réalisations et à me contacter si vous voulez discuter, partager des idées ou simplement faire connaissance.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> elakhyf – Portfolio.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox commune (si tu gardes le même système partout) -->
+  <div class="lightbox-js" id="lightbox-js">
+    <div class="lightbox-js__overlay"></div>
+    <button class="lightbox-js__close" aria-label="Fermer">&times;</button>
+    <button class="lightbox-js__prev" aria-label="Image précédente">&#10094;</button>
+    <img class="lightbox-js__img" src="" alt="">
+    <button class="lightbox-js__next" aria-label="Image suivante">&#10095;</button>
+  </div>
+
+  <script src="lightbox.js"></script>
+</body>
+</html>
