@@ -458,3 +458,81 @@ h2 {
   top: 50%;
   transform: translateY(-50%);
 }
+
+/* =========================
+   Page About me
+   ========================= */
+
+.about-wrapper {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 16px;
+}
+
+.about-card {
+  max-width: 900px;
+  width: 100%;
+  background: var(--card);
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+  padding: 24px 24px 20px;
+}
+
+.about-title {
+  margin: 0 0 16px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+}
+
+.about-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.about-photo-wrapper {
+  flex: 0 0 35%;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+  display: block;
+}
+
+.about-text {
+  flex: 1;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+/* Responsive About */
+
+@media (max-width: 768px) {
+  .about-card {
+    padding: 20px 16px;
+  }
+
+  .about-layout {
+    flex-direction: column;
+  }
+
+  .about-photo-wrapper {
+    flex: 0 0 auto;
+  }
+
+  .about-photo {
+    max-height: none;
+  }
+}

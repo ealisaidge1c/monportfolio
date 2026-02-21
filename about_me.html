@@ -5,86 +5,8 @@
   <title>About me – elakhyf</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Wrapper général */
-    .about-wrapper {
-      min-height: calc(100vh - 80px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 64px 16px;
-    }
-
-    .about-card {
-      max-width: 900px;
-      width: 100%;
-      background: #ffffff;
-      border-radius: 18px;
-      border: 1px solid var(--border);
-      box-shadow: 0 14px 32px rgba(0,0,0,0.12);
-      padding: 24px 24px 20px;
-    }
-
-    /* Titre de la carte */
-    .about-title {
-      margin: 0 0 16px;
-      font-size: 1.6rem;
-      font-weight: 600;
-      color: var(--text, #111);
-      text-align: center;
-    }
-
-    /* Mise en page image + texte côte à côte sur desktop */
-    .about-layout {
-      display: flex;
-      flex-direction: row;
-      gap: 24px;
-      align-items: flex-start;
-    }
-
-    /* Colonne image */
-    .about-photo-wrapper {
-      flex: 0 0 35%; /* environ un tiers pour la photo */
-    }
-
-    .about-photo {
-      width: 100%;
-      height: auto;
-      max-height: 380px;
-      border-radius: 18px;
-      border: 1px solid var(--border);
-      object-fit: cover;
-      display: block;
-    }
-
-    /* Colonne texte */
-    .about-text {
-      flex: 1;
-      color: var(--muted);
-      font-size: 0.98rem;
-      line-height: 1.7;
-    }
-
-    /* Responsive : sur mobile, on repasse en colonne */
-    @media (max-width: 768px) {
-      .about-card {
-        padding: 20px 16px;
-      }
-
-      .about-layout {
-        flex-direction: column;
-      }
-
-      .about-photo-wrapper {
-        flex: 0 0 auto;
-      }
-
-      .about-photo {
-        max-height: none;
-      }
-    }
-  </style>
 </head>
+
 <body>
   <header class="site-header">
     <div class="container nav-container">
